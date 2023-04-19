@@ -1,0 +1,80 @@
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+}
+
+.carousel-item.active {
+  position: relative;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item.active img {
+  object-fit: cover;
+}
+
+/* The animations for the captions - START */
+.carousel-item .slide1 {
+  animation: slide-from-left 0.5s ease-in-out;
+}
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.carousel-item .slide2 {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel-item .slide3 {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-200%);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: translateY(-20%);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* The animations for the captions - END */
+
+@media (min-width: 1024px) {
+  .the_slide {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+}
