@@ -6,6 +6,8 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CorouselComponent } from './corousel/corousel.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { SchoolFeaturesComponent } from './school-features/school-features.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     TopNavComponent,
     NavBarComponent,
     CorouselComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    SchoolFeaturesComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule
