@@ -8,6 +8,7 @@ import { CorouselComponent } from './corousel/corousel.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { SchoolFeaturesComponent } from './school-features/school-features.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { SchoolStatisticsComponent } from './school-statistics/school-statistics.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
     CorouselComponent,
     TestimonialsComponent,
     SchoolFeaturesComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    SchoolStatisticsComponent
   ],
   imports: [
     BrowserModule
