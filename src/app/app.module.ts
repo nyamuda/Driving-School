@@ -9,6 +9,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { SchoolFeaturesComponent } from './school-features/school-features.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SchoolStatisticsComponent } from './school-statistics/school-statistics.component';
+import { CoursesOfferedComponent } from './courses-offered/courses-offered.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SchoolStatisticsComponent } from './school-statistics/school-statistics
     TestimonialsComponent,
     SchoolFeaturesComponent,
     IntroductionComponent,
-    SchoolStatisticsComponent
+    SchoolStatisticsComponent,
+    CoursesOfferedComponent
   ],
   imports: [
     BrowserModule
