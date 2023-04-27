@@ -1,0 +1,7 @@
+a:hover svg {
+  transition: all 0.2s ease-in;
+}
+
+a:hover svg {
+  fill: red !important;
+}

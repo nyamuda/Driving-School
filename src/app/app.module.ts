@@ -10,6 +10,7 @@ import { SchoolFeaturesComponent } from './school-features/school-features.compo
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SchoolStatisticsComponent } from './school-statistics/school-statistics.component';
 import { CoursesOfferedComponent } from './courses-offered/courses-offered.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CoursesOfferedComponent } from './courses-offered/courses-offered.compo
     SchoolFeaturesComponent,
     IntroductionComponent,
     SchoolStatisticsComponent,
-    CoursesOfferedComponent
+    CoursesOfferedComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
