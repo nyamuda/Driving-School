@@ -1,34 +1,40 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent } from './app.component';
-import { TopNavComponent } from './top-nav/top-nav.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { CorouselComponent } from './corousel/corousel.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { SchoolFeaturesComponent } from './school-features/school-features.component';
-import { IntroductionComponent } from './introduction/introduction.component';
-import { SchoolStatisticsComponent } from './school-statistics/school-statistics.component';
-import { CoursesOfferedComponent } from './courses-offered/courses-offered.component';
-import { FooterComponent } from './footer/footer.component';
+import { AppComponent } from "./app.component";
+import { FooterComponent } from "./footer.component";
+import { HomepageComponent } from "./homepage/homepage.component";
+import { HomepageCarouselComponent } from "./homepage/homepage-carousel/homepage-carousel.component";
+import { HomepageIntroductionComponent } from "./homepage/homepage-introduction/homepage-introduction.component";
+import { HomepageTestimonialsComponent } from "./homepage/homepage-testimonials/homepage-testimonials.component";
+import { HomepageSchoolFeaturesComponent } from "./homepage/homepage-school-features/homepage-school-features.component";
+import { HomepageSchoolStatisticsComponent } from "./homepage/homepage-school-statistics/homepage-school-statistics.component";
+import { HomepageCoursesOfferedComponent } from "./homepage/homepage-courses-offered/homepage-courses-offered.component";
+import { HeaderComponent } from "./header.component";
+import { CoursesComponent } from './courses/courses.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopNavComponent,
-    NavBarComponent,
-    CorouselComponent,
-    TestimonialsComponent,
-    SchoolFeaturesComponent,
-    IntroductionComponent,
-    SchoolStatisticsComponent,
-    CoursesOfferedComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        FooterComponent,
+        HomepageComponent,
+        HomepageCarouselComponent,
+        HomepageTestimonialsComponent,
+        HomepageSchoolFeaturesComponent,
+        HomepageSchoolStatisticsComponent,
+        HomepageCoursesOfferedComponent,
+        HeaderComponent,
+        HomepageIntroductionComponent,
+        CoursesComponent,
+        GalleryComponent,
+        AboutComponent,
+        ContactComponent,
+    ],
+    imports: [BrowserModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

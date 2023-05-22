@@ -1,8 +1,7 @@
-<app-top-nav></app-top-nav>
-<app-nav-bar></app-nav-bar>
-<app-corousel></app-corousel>
-<app-introduction></app-introduction>
-<app-school-features></app-school-features>
-<app-testimonials></app-testimonials>
-<app-courses-offered></app-courses-offered>
+<app-header></app-header>
+<app-homepage *ngIf="getComponentToShow()=='homepage'"></app-homepage>
+<app-gallery *ngIf="getComponentToShow()=='gallery'"></app-gallery>
+<app-courses *ngIf="getComponentToShow()=='courses'"></app-courses>
+<app-about *ngIf="getComponentToShow()=='about'"></app-about>
+<app-contact *ngIf="getComponentToShow()=='contact'"></app-contact>
 <app-footer></app-footer>

@@ -1,0 +1,39 @@
+<!--TOP SMALL HEADER-->
+<p class="border border-1 border-danger mb-0"></p>
+<div class="container-fluid bg-dark pt-2 pt-lg-0">
+    <div class="row text-nowrap justify-content-lg-end align-items-lg-center pt-lg-2 text-light fs-6">
+        <p class="col-lg-auto d-flex">
+            <span class="material-icons pe-1 text-danger"> phone </span> +27 123 6889
+        </p>
+        <p class="col-lg-auto d-flex">
+            <span class="material-icons pe-1 text-danger"> place </span> 8th floor 379
+            Hudson St Cape Town
+        </p>
+        <p class="col-lg-auto d-flex">
+            <span class="material-icons pe-1 text-danger"> schedule </span> 09:30 am –
+            06:00 pm
+        </p>
+    </div>
+</div>
+
+<!--THE NAV BAR-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-danger" href="#">Loyd Driving School</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav ms-auto">
+                <a (click)="changeComponentToShow('homepage')" class="nav-link" [ngClass]="{'active': getComponentToShow()=='homepage'}" aria-current="page" href="#">Home</a>
+                <a (click)="changeComponentToShow('courses')" class="nav-link" [ngClass]="{'active': getComponentToShow()=='courses'}" href="#">Courses</a>
+                <a (click)="changeComponentToShow('gallery')" class="nav-link" [ngClass]="{'active': getComponentToShow()=='gallery'}" href="#">Gallery</a>
+                <a (click)="changeComponentToShow('about')" class="nav-link" [ngClass]="{'active': getComponentToShow()=='about'}" href="#">About</a>
+                <a (click)="changeComponentToShow('contact')" class="nav-link" [ngClass]="{'active': getComponentToShow()=='contact'}" href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
