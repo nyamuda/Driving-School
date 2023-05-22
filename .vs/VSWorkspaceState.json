@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dist\\driving_school",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\homepage"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\homepage\\homepage.model.ts",
+  "SelectedNode": "\\src\\index.html",
   "PreviewInSolutionExplorer": false
 }
